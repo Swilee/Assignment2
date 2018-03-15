@@ -462,7 +462,8 @@ class PlayerHandModel(PlayerHand, QObject):
                                 if suit_card_connector[i-4]:
                                     card_values = [i+1]
                                     return 8, card_values
-
+        else:
+            return None, None
 
 class TableModel(PlayerHand, QObject):
     data_changed = pyqtSignal()
