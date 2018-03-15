@@ -239,6 +239,8 @@ class PlayerHandModel(PlayerHand, QObject):
             for card in cards:
                 if card.suit.value == suit_count.index(max(suit_count)):
                     suit_card_connector[card.value - 1] = 1
+        if sum(value_count) == 0:
+            raise ValueError('No cards in hand or on table')
         v, card_values = self.check_straight_flush(suit_card_connector, suit_count)
 
         if card_values is not None:

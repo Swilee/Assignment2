@@ -49,7 +49,6 @@ def test_a_poker_hand():
     hand.give_card(poker.NumberedCard(5, poker.Suit.Clubs))
     hand.best_poker_hand([])
     result = poker.CardCombo.twopair
-    print(hand.pokerhand.cardcombo)
     assert result == hand.pokerhand.cardcombo
 
 
