@@ -23,8 +23,6 @@ def test_deck():
     assert result.deck.size == 52
     result.take_top_card()
     assert result.deck.size == 51
-    
-
 
 
 def test_deck_take_top_card():
@@ -32,7 +30,6 @@ def test_deck_take_top_card():
     top_card = all_cards.deck[-1]
     result = all_cards.take_top_card()
     assert result == top_card
-
 
 
 def test_best_poker_hand():
