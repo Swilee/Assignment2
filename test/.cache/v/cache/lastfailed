@@ -1,5 +1,3 @@
 {
-  "test__poker.py::test_CardCombo": true,
-  "test__poker.py::test_best_poker_hand": true,
-  "test__poker.py::test_givecard": true
+  "test__poker.py::test_best_poker_hand": true
 }

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a33fb4d9-6e77-4cb7-b560-eb896dce3a95" name="Default" comment="" />
+=======
+    <list default="true" id="a33fb4d9-6e77-4cb7-b560-eb896dce3a95" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/poker.py" afterPath="$PROJECT_DIR$/poker.py" />
+      <change beforePath="$PROJECT_DIR$/test/.cache/v/cache/lastfailed" afterPath="$PROJECT_DIR$/test/.cache/v/cache/lastfailed" />
+    </list>
+>>>>>>> f58bd488c9656e48afc6385ea8c6d5c566b1a81c
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +18,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="poker.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="poker.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/poker.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1206">
               <caret line="282" column="22" lean-forward="false" selection-start-line="282" selection-start-column="13" selection-end-line="282" selection-end-column="22" />
+=======
+            <state relative-caret-position="35">
+              <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+>>>>>>> f58bd488c9656e48afc6385ea8c6d5c566b1a81c
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -23,11 +35,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test__poker.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test__poker.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test__poker.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="180">
               <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+=======
+            <state relative-caret-position="207">
+              <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+>>>>>>> f58bd488c9656e48afc6385ea8c6d5c566b1a81c
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -58,8 +75,8 @@
         <option value="$PROJECT_DIR$/Edman.py" />
         <option value="$PROJECT_DIR$/doc/source/index.rst" />
         <option value="$PROJECT_DIR$/test/test_cardlib.py" />
-        <option value="$PROJECT_DIR$/poker.py" />
         <option value="$PROJECT_DIR$/test/test__poker.py" />
+        <option value="$PROJECT_DIR$/poker.py" />
       </list>
     </option>
   </component>
@@ -85,6 +102,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -274,6 +292,7 @@
     <servers />
   </component>
   <component name="TestHistory">
+<<<<<<< HEAD
     <history-entry file="py_test_in_test - 2018.03.15 at 13h 21m 50s.xml">
       <configuration name="py.test in test" configurationId="tests" />
     </history-entry>
@@ -284,6 +303,9 @@
       <configuration name="py.test in test" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test - 2018.03.15 at 13h 26m 27s.xml">
+=======
+    <history-entry file="py_test_in_test - 2018.03.13 at 15h 00m 49s.xml">
+>>>>>>> f58bd488c9656e48afc6385ea8c6d5c566b1a81c
       <configuration name="py.test in test" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test - 2018.03.15 at 13h 26m 57s.xml">
@@ -304,6 +326,15 @@
     <history-entry file="py_test_in_test - 2018.03.15 at 13h 31m 49s.xml">
       <configuration name="py.test in test" configurationId="tests" />
     </history-entry>
+    <history-entry file="py_test_in_test - 2018.03.15 at 13h 23m 09s.xml">
+      <configuration name="py.test in test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test - 2018.03.15 at 13h 27m 26s.xml">
+      <configuration name="py.test in test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test - 2018.03.15 at 13h 29m 51s.xml">
+      <configuration name="py.test in test" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -311,7 +342,11 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24925596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46601942" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> f58bd488c9656e48afc6385ea8c6d5c566b1a81c
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -354,7 +389,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/poker.py</url>
-          <line>455</line>
+          <line>453</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -365,7 +400,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/poker.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="680">
+=======
+        <state relative-caret-position="1000">
+>>>>>>> f58bd488c9656e48afc6385ea8c6d5c566b1a81c
           <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -383,7 +422,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test__poker.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="51">
+=======
+        <state relative-caret-position="75">
+>>>>>>> f58bd488c9656e48afc6385ea8c6d5c566b1a81c
           <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
@@ -484,22 +527,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/poker.py">
+    <entry file="file://$PROJECT_DIR$/test/test__poker.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1206">
           <caret line="282" column="22" lean-forward="false" selection-start-line="282" selection-start-column="13" selection-end-line="282" selection-end-column="22" />
+=======
+        <state relative-caret-position="207">
+          <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+>>>>>>> f58bd488c9656e48afc6385ea8c6d5c566b1a81c
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test__poker.py">
+    <entry file="file://$PROJECT_DIR$/poker.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="180">
           <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+=======
+        <state relative-caret-position="35">
+          <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+>>>>>>> f58bd488c9656e48afc6385ea8c6d5c566b1a81c
           <folding>
-            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

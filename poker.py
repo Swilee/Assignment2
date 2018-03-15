@@ -36,7 +36,7 @@ class HighCard(IntEnum):
     ace = 14
 
 
-class CardCombo(Enum):
+class CardCombo(IntEnum):
     """
     Here an enum class is created to represent the different values of pokenhands.
     """
@@ -49,9 +49,6 @@ class CardCombo(Enum):
     fullhouse = 6
     fourofakind = 7
     straightflush = 8
-
-    def __lt__(self, other):
-        return self.value < other
 
 class PlayingCard(ABC):
     """
