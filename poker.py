@@ -20,7 +20,9 @@ class Suit(Enum):
 
 
 class HighCard(IntEnum):
-
+    """
+    The high card values are represented by an enum class.
+    """
     two = 2
     three = 3
     four = 4
@@ -102,6 +104,9 @@ class JackCard(PlayingCard):
 
 
 class QueenCard(PlayingCard):
+    """
+    The QueenCard class represents the queen card.
+    """
     def __init__(self, suit):
         super().__init__()
         self.suit = suit
@@ -114,6 +119,9 @@ class QueenCard(PlayingCard):
 
 
 class KingCard(PlayingCard):
+    """
+    The KingCard class represents the king card.
+    """
     def __init__(self, suit):
         super().__init__()
         self.suit = suit
@@ -126,6 +134,9 @@ class KingCard(PlayingCard):
 
 
 class AceCard(PlayingCard):
+    """
+    The AceCard class represents the ace card.
+    """
     def __init__(self, suit):
         super().__init__()
         self.suit = suit
@@ -138,6 +149,9 @@ class AceCard(PlayingCard):
 
 
 class Deck(object):
+    """
+    In the Deck class, 52 cards are created and stored in the "deck" variable.
+    """
     def __init__(self):
         deck = np.array([])
         for j in range(0, 4):

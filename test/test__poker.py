@@ -23,8 +23,6 @@ def test_deck():
     assert result.deck.size == 52
     result.take_top_card()
     assert result.deck.size == 51
-    
-
 
 
 def test_deck_take_top_card():
@@ -49,7 +47,7 @@ def test_a_poker_hand():
     hand.give_card(poker.NumberedCard(10, poker.Suit.Spades))
     hand.give_card(poker.NumberedCard(9, poker.Suit.Hearts))
     hand.give_card(poker.NumberedCard(5, poker.Suit.Clubs))
-    hand.best_poker_hand()
+    hand.best_poker_hand([])
     result = poker.CardCombo.twopair
     print(hand.pokerhand.cardcombo)
     assert result == hand.pokerhand.cardcombo
