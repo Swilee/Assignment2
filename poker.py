@@ -210,6 +210,7 @@ class PlayerHandModel(PlayerHand, QObject):
         self.data_changed.emit()
 
     def best_poker_hand(self, cards):
+        self.cards = cards
         cards = np.append(self.cards, cards)
         value_count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         self.card_combo = None
@@ -222,17 +223,16 @@ class PlayerHandModel(PlayerHand, QObject):
             value_count[val-1] += 1
             suit = card.suit
             suit_count[suit.value] += 1
-
         if max(suit_count) >= 5:
             for card in cards:
                 if card.suit.value == suit_count.index(max(suit_count)):
                     suit_card_connector[card.value - 1] = 1
-
         v, card_values = self.check_straight_flush(suit_card_connector, suit_count)
+        print(v)
+        print(card_values)
         if card_values is not None:
             self.card_combo = v
             self.card_values = card_values
-
 
         if self.card_combo is None:
             v, card_values = self.check_four_of_a_kind(value_count)
@@ -276,15 +276,10 @@ class PlayerHandModel(PlayerHand, QObject):
                 self.card_combo = v
                 self.card_values = card_values
 
-
         if self.card_combo is None:
             self.card_combo, self.card_values = self.high_card(value_count)
 
-        self.pokerhand =  PokerHand(self.card_combo, self.card_values)
-
-
-
-
+        self.pokerhand = PokerHand(self.card_combo, self.card_values)
 
     @staticmethod
     def high_card(value_count):
@@ -315,6 +310,7 @@ class PlayerHandModel(PlayerHand, QObject):
             return 1, card_values[0:4]
         else:
             return None, None
+
     @staticmethod
     def check_two_pair(value_count):
         '''
@@ -341,7 +337,6 @@ class PlayerHandModel(PlayerHand, QObject):
             return 2, card_values
         else:
             return None, None
-
 
     @staticmethod
     def check_three_of_a_kind(value_count):
@@ -464,6 +459,7 @@ class PlayerHandModel(PlayerHand, QObject):
                                     return 8, card_values
 
 
+
 class TableModel(PlayerHand, QObject):
     data_changed = pyqtSignal()
 
@@ -491,7 +487,6 @@ class PokerHand:
     def __init__(self, cardcombo, highcard):
         self.highcard = highcard
         self.cardcombo = CardCombo(cardcombo)
-
 
 
 
