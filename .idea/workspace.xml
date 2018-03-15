@@ -22,12 +22,17 @@
         <entry file="file://$PROJECT_DIR$/poker.py">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="1206">
               <caret line="282" column="22" lean-forward="false" selection-start-line="282" selection-start-column="13" selection-end-line="282" selection-end-column="22" />
 =======
             <state relative-caret-position="35">
               <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
 >>>>>>> f58bd488c9656e48afc6385ea8c6d5c566b1a81c
+=======
+            <state relative-caret-position="1007">
+              <caret line="236" column="0" lean-forward="true" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
+>>>>>>> d8a6c53727271464ca48ca26c427569cac849c90
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -39,12 +44,17 @@
         <entry file="file://$PROJECT_DIR$/test/test__poker.py">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="180">
               <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
 =======
             <state relative-caret-position="207">
               <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
 >>>>>>> f58bd488c9656e48afc6385ea8c6d5c566b1a81c
+=======
+            <state relative-caret-position="485">
+              <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+>>>>>>> d8a6c53727271464ca48ca26c427569cac849c90
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -293,6 +303,7 @@
   </component>
   <component name="TestHistory">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <history-entry file="py_test_in_test - 2018.03.15 at 13h 21m 50s.xml">
       <configuration name="py.test in test" configurationId="tests" />
     </history-entry>
@@ -324,6 +335,14 @@
       <configuration name="py.test in test" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test - 2018.03.15 at 13h 31m 49s.xml">
+=======
+    <history-entry file="py_test_in_test - 2018.03.13 at 15h 08m 47s.xml">
+      <configuration name="py.test in test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test - 2018.03.13 at 15h 09m 37s.xml">
+      <configuration name="py.test in test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test - 2018.03.13 at 17h 30m 48s.xml">
       <configuration name="py.test in test" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test - 2018.03.15 at 13h 23m 09s.xml">
@@ -333,6 +352,19 @@
       <configuration name="py.test in test" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test - 2018.03.15 at 13h 29m 51s.xml">
+      <configuration name="py.test in test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test - 2018.03.15 at 13h 34m 07s.xml">
+>>>>>>> d8a6c53727271464ca48ca26c427569cac849c90
+      <configuration name="py.test in test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test - 2018.03.15 at 13h 34m 43s.xml">
+      <configuration name="py.test in test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test - 2018.03.15 at 13h 35m 57s.xml">
+      <configuration name="py.test in test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test - 2018.03.15 at 13h 37m 44s.xml">
       <configuration name="py.test in test" configurationId="tests" />
     </history-entry>
   </component>
@@ -389,7 +421,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/poker.py</url>
-          <line>453</line>
+          <line>456</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -530,12 +562,17 @@
     <entry file="file://$PROJECT_DIR$/test/test__poker.py">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="1206">
           <caret line="282" column="22" lean-forward="false" selection-start-line="282" selection-start-column="13" selection-end-line="282" selection-end-column="22" />
 =======
         <state relative-caret-position="207">
           <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
 >>>>>>> f58bd488c9656e48afc6385ea8c6d5c566b1a81c
+=======
+        <state relative-caret-position="485">
+          <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+>>>>>>> d8a6c53727271464ca48ca26c427569cac849c90
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
@@ -545,12 +582,17 @@
     <entry file="file://$PROJECT_DIR$/poker.py">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="180">
           <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
 =======
         <state relative-caret-position="35">
           <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
 >>>>>>> f58bd488c9656e48afc6385ea8c6d5c566b1a81c
+=======
+        <state relative-caret-position="1007">
+          <caret line="236" column="0" lean-forward="true" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
+>>>>>>> d8a6c53727271464ca48ca26c427569cac849c90
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

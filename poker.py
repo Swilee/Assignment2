@@ -228,14 +228,17 @@ class PlayerHandModel(PlayerHand, QObject):
                 if card.suit.value == suit_count.index(max(suit_count)):
                     suit_card_connector[card.value - 1] = 1
 
-        card_values = self.check_straight_flush(suit_card_connector, suit_count)
+        v, card_values = self.check_straight_flush(suit_card_connector, suit_count)
         if card_values is not None:
-            return PokerHand(CardCombo.straightflush, card_values)
-
-        v, card_values = self.check_four_of_a_kind(value_count)
-        if v is not None:
             self.card_combo = v
             self.card_values = card_values
+
+
+        if self.card_combo is None:
+            v, card_values = self.check_four_of_a_kind(value_count)
+            if v is not None:
+                self.card_combo = v
+                self.card_values = card_values
 
         if self.card_combo is None:
             v, card_values = self.check_full_house(value_count)
@@ -458,7 +461,7 @@ class PlayerHandModel(PlayerHand, QObject):
                             if suit_card_connector[i-3]:
                                 if suit_card_connector[i-4]:
                                     card_values = [i+1]
-                                    return card_values
+                                    return 8, card_values
 
 
 class TableModel(PlayerHand, QObject):

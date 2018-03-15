@@ -32,5 +32,5 @@ def test_best_poker_hand():
 
 
 def test_pokerhand():
-    result = poker.PokerHand(1,[2])
+    result = poker.PokerHand(1, [2])
     assert issubclass(type(result.cardcombo), poker.Enum)
