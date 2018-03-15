@@ -51,7 +51,7 @@ class CardCombo(Enum):
     straightflush = 8
 
     def __lt__(self, other):
-        return self.value < ot
+        return self.value < other
 
 class PlayingCard(ABC):
     """
