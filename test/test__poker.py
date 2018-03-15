@@ -1,6 +1,4 @@
 from nose.tools import assert_raises
-import unittest
-import numpy as np
 import poker
 
 
@@ -16,7 +14,15 @@ def test_PlayingCard():
 
 def test_CardCombo():
     assert poker.CardCombo.straightflush > poker.CardCombo.fourofakind
-
+    assert poker.CardCombo.fourofakind > poker.CardCombo.fullhouse
+    assert poker.CardCombo.fullhouse > poker.CardCombo.flush
+    assert poker.CardCombo.flush > poker.CardCombo.straight
+    assert poker.CardCombo.straight > poker.CardCombo.threeofakind
+    assert poker.CardCombo.threeofakind > poker.CardCombo.twopair
+    assert poker.CardCombo.twopair > poker.CardCombo.onepair
+    assert poker.CardCombo.onepair > poker.CardCombo.highcard
+    with assert_raises(TypeError):
+        poker.NumberedCard(5, poker.Suit.Clubs) > poker.CardCombo.highcard
 
 def test_deck():
     result = poker.Deck()
@@ -39,7 +45,7 @@ def test_best_poker_hand():
     assert hand.pokerhand.cardcombo == poker.CardCombo.straightflush
 
 
-def test_a_poker_hand():
+def test_twopair():
     hand = poker.PlayerHandModel()
     hand.give_card(poker.AceCard(poker.Suit.Spades))
     hand.give_card(poker.AceCard(poker.Suit.Diamonds))
@@ -55,3 +61,26 @@ def test_a_poker_hand():
 def test_pokerhand():
     result = poker.PokerHand(1, [2])
     assert issubclass(type(result.cardcombo), poker.Enum)
+
+def test_full_round():
+    '''Testing a full round where both players should hit a full house, making sure the PokerHand prioritize correctly
+    and that "best_poker_hand" will return correctly. (all the functions of best_poker_hand can be tested the same way)
+    '''
+    player1 = poker.PlayerHandModel()
+    player1.give_card(poker.AceCard(poker.Suit.Spades))
+    player1.give_card(poker.AceCard(poker.Suit.Diamonds))
+
+    player2 = poker.PlayerHandModel()
+    player2.give_card(poker.KingCard(poker.Suit.Hearts))
+    player2.give_card(poker.KingCard(poker.Suit.Diamonds))
+
+    table = [poker.NumberedCard(5, poker.Suit.Clubs), poker.KingCard(poker.Suit.Clubs), poker.JackCard(poker.Suit.Diamonds),poker.JackCard(poker.Suit.Clubs), poker.JackCard(poker.Suit.Hearts)]
+
+    player1.best_poker_hand(table)
+    player2.best_poker_hand(table)
+    assert player2.card_combo == poker.CardCombo.fullhouse
+    assert player2.card_combo == player1.card_combo
+    assert player1.pokerhand < player2.pokerhand
+
+
+
