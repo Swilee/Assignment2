@@ -59,3 +59,8 @@ def test_a_poker_hand():
 def test_pokerhand():
     result = poker.PokerHand(1, [2])
     assert issubclass(type(result.cardcombo), poker.Enum)
+
+def test_full_round():
+    deck =poker.Deck().deck
+    player1 = poker.PlayerHandModel()
+    
