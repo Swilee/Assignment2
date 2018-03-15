@@ -210,7 +210,6 @@ class PlayerHandModel(PlayerHand, QObject):
         self.data_changed.emit()
 
     def best_poker_hand(self, cards):
-        self.cards = cards
         cards = np.append(self.cards, cards)
         value_count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         self.card_combo = None
