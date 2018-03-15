@@ -1,1 +1,3 @@
-{}
+{
+  "test__poker.py::test_give_card": true
+}

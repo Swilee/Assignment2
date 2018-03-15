@@ -50,7 +50,6 @@ class CardCombo(IntEnum):
     fourofakind = 7
     straightflush = 8
 
-
 class PlayingCard(ABC):
     """
     Here a playingcard class is defined to be comparable.
