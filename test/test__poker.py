@@ -45,15 +45,12 @@ def test_best_poker_hand():
 def test_a_poker_hand():
     hand = poker.PlayerHandModel()
     hand.give_card(poker.AceCard(poker.Suit.Spades))
-    hand.give_card(poker.QueenCard(poker.Suit.Hearts))
-    hand.give_card(poker.QueenCard(poker.Suit.Clubs))
-    hand.give_card(poker.JackCard(poker.Suit.Clubs))
-    hand.give_card(poker.NumberedCard(8, poker.Suit.Spades))
-    hand.give_card(poker.NumberedCard(4, poker.Suit.Hearts))
-    hand.give_card(poker.NumberedCard(4, poker.Suit.Spades))
-
-    hand.best_poker_hand(hand.cards)
-    print(hand.cards)
+    hand.give_card(poker.AceCard(poker.Suit.Diamonds))
+    hand.give_card(poker.NumberedCard(10, poker.Suit.Clubs))
+    hand.give_card(poker.NumberedCard(10, poker.Suit.Spades))
+    hand.give_card(poker.NumberedCard(9, poker.Suit.Hearts))
+    hand.give_card(poker.NumberedCard(5, poker.Suit.Clubs))
+    hand.best_poker_hand([])
     result = poker.CardCombo.twopair
     print(result)
     print(hand.pokerhand.cardcombo)

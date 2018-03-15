@@ -217,7 +217,6 @@ class PlayerHandModel(PlayerHand, QObject):
 
         suit_card_connector = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         suit_count = [0, 0, 0, 0]
-
         for card in cards:
             val = card.value
             value_count[val-1] += 1
@@ -228,8 +227,7 @@ class PlayerHandModel(PlayerHand, QObject):
                 if card.suit.value == suit_count.index(max(suit_count)):
                     suit_card_connector[card.value - 1] = 1
         v, card_values = self.check_straight_flush(suit_card_connector, suit_count)
-        print(v)
-        print(card_values)
+
         if card_values is not None:
             self.card_combo = v
             self.card_values = card_values
@@ -457,7 +455,8 @@ class PlayerHandModel(PlayerHand, QObject):
                                 if suit_card_connector[i-4]:
                                     card_values = [i+1]
                                     return 8, card_values
-
+        else:
+            return None, None
 
 
 class TableModel(PlayerHand, QObject):
