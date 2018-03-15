@@ -39,14 +39,14 @@ def test_deck_take_top_card():
 
 
 def test_best_poker_hand():
-    hand = poker.PlayerHandModel()
+    hand = poker.PlayerHand()
     deck = poker.Deck()
     hand.best_poker_hand(deck.deck)
     assert hand.pokerhand.cardcombo == poker.CardCombo.straightflush
 
 
 def test_twopair():
-    hand = poker.PlayerHandModel()
+    hand = poker.PlayerHand()
     hand.give_card(poker.AceCard(poker.Suit.Spades))
     hand.give_card(poker.AceCard(poker.Suit.Diamonds))
     hand.give_card(poker.NumberedCard(10, poker.Suit.Clubs))
@@ -66,11 +66,11 @@ def test_full_round():
     '''Testing a full round where both players should hit a full house, making sure the PokerHand prioritize correctly
     and that "best_poker_hand" will return correctly. (all the functions of best_poker_hand can be tested the same way)
     '''
-    player1 = poker.PlayerHandModel()
+    player1 = poker.PlayerHand()
     player1.give_card(poker.AceCard(poker.Suit.Spades))
     player1.give_card(poker.AceCard(poker.Suit.Diamonds))
 
-    player2 = poker.PlayerHandModel()
+    player2 = poker.PlayerHand()
     player2.give_card(poker.KingCard(poker.Suit.Hearts))
     player2.give_card(poker.KingCard(poker.Suit.Diamonds))
 

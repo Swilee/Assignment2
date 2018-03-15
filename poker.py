@@ -1,7 +1,6 @@
 import numpy as np
 from enum import Enum
 from enum import IntEnum
-from PyQt5.QtCore import *
 from abc import ABC, abstractmethod
 
 
@@ -164,9 +163,15 @@ class Deck(object):
         self.deck = deck
 
     def shuffle_deck(self):
+        '''Randomly shuffles the Deck objects deck'''
         np.random.shuffle(self.deck)
 
     def take_top_card(self):
+        '''
+        takes the top card from the deck
+        :return: the deck itself without the topcard
+                and the topcard itself
+        '''
         topcard = self.deck[-1]
         self.deck = np.delete(self.deck, -1)
 
@@ -178,52 +183,38 @@ class PlayerHand:
     The playerhand class can be used to create a player hand. The hand may be given cards, have cards removed,
     sorted and evaluated for the best poker hand.
     """
-    #data_changed = pyqtSignal()
+
     def __init__(self):
         self.cards = np.array([])
 
     def give_card(self, card):
+        '''
+        Adds a card to the hand.
+        :param card: The PlayingCard object to be added
+        :return The cards, with the specified card added
+        '''
         self.cards = np.append(self.cards, card)
 
+
     def remove_card(self, index):
+        '''
+        Removes the card in the hand at the specified indicies
+        :param index: indices for card to be removed
+        :return The cards, with the specified card removed
+        '''
         self.cards = np.delete(self.cards, index)
 
     def sort_cards(self):
+        '''Sorts the cards in the hand'''
         return np.sort(self.cards)
 
 
-class PlayerHandModel(PlayerHand, QObject):
-    data_changed = pyqtSignal()
-
-    def __init__(self):
-        PlayerHand.__init__(self)
-        QObject.__init__(self)
-        self.card_combo = None
-        self.active = 0
-        self.marked_cards = [False]*len(self.cards)
-        self.flipped_cards = True
-
-        #self.pokerhand = PokerHand(cardcombo.v, card_values)
-
-    def flip(self):
-        # Flips over the cards (to hide them)
-        self.flipped_cards = not self.flipped_cards
-        self.data_changed.emit()
-
-    def flipped(self, i):
-        # This model only flips all or no cards, so we don't care about the index.
-        # Might be different for other games though!
-        return self.flipped_cards
-
-    def give_card(self, card):
-        super().give_card(card)
-        self.data_changed.emit()
-
-    def remove_card(self, index):
-        super().remove_card(index)
-        self.data_changed.emit()
-
     def best_poker_hand(self, cards):
+        '''
+        Computes the best pokerhand out of a set of cards
+        :param cards: a single PlayingCard or a list of PlayingCard objects
+        :return a PokerHand object containing the CardCombo and the highest cards
+        '''
         cards = np.append(self.cards, cards)
         value_count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         self.card_combo = None
@@ -241,8 +232,8 @@ class PlayerHandModel(PlayerHand, QObject):
                     suit_card_connector[card.value - 1] = 1
         if sum(value_count) == 0:
             raise ValueError('No cards in hand or on table')
-        v, card_values = self.check_straight_flush(suit_card_connector, suit_count)
 
+        v, card_values = self.check_straight_flush(suit_card_connector, suit_count)
         if card_values is not None:
             self.card_combo = v
             self.card_values = card_values
@@ -474,27 +465,8 @@ class PlayerHandModel(PlayerHand, QObject):
             return None, None
 
 
-class TableModel(PlayerHand, QObject):
-    data_changed = pyqtSignal()
-
-    def __init__(self):
-        PlayerHand.__init__(self)
-        QObject.__init__(self)
-        self.active = 0
-
-    def flipped(self, i):       #since card_view.py will call this function, it is left in the code but without effect
-        pass                    #this is instead of changing card_view.py to do differently for different input
-
-    def give_card(self, card):
-        super().give_card(card)
-        self.data_changed.emit()
-
-    def remove_card(self, index):
-        super().remove_card(index)
-        self.data_changed.emit()
-
-
 class PokerHand:
+    '''Class to represent the pokerhands and making them comparable'''
     def __lt__(self, other):
         return (self.cardcombo, self.highcard) < (other.cardcombo, other.highcard)
 
